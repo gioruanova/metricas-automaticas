@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -8,6 +12,7 @@ body {
     justify-content: center;
     width: 100%;
     background-color: #f0f0f0;
+
 
 }
 
@@ -65,6 +70,7 @@ body p {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    cursor: pointer;
 }
 
 
@@ -91,4 +97,21 @@ body p {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.filter-container select,
+.filter-container button {
+    cursor: pointer;
 }
