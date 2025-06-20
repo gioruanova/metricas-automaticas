@@ -20,3 +20,10 @@ export function vicePresidentView(){
         alert("Vista generada: Vicepresidente");
     });
 }
+
+export function teamLeaderView(){
+    const teamLeaderView = document.getElementById("team-leader-view");
+    teamLeaderView.addEventListener("click", () => {
+        alert("Vista generada: Lider de equipo");
+    });
+}
