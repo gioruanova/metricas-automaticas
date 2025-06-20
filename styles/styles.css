@@ -115,3 +115,36 @@ body p {
 .filter-container button {
     cursor: pointer;
 }
+
+.views-generator {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+button.view-button {
+    all: unset;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(104, 164, 233);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: rgb(97, 135, 179);
+        color: white;
+    }
+}
