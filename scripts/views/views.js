@@ -6,3 +6,10 @@ export function operationsAnalystView() {
 
 
 }
+
+export function gerenteView(){
+    const gerenteView = document.getElementById("gerente-view");
+    gerenteView.addEventListener("click", () => {
+        alert("Vista generada: Gerente");
+    });
+}
