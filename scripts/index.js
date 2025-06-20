@@ -3,8 +3,8 @@ import { operationsAnalystView, gerenteView, vicePresidentView, teamLeaderView }
 
 document.addEventListener("DOMContentLoaded", async () => {
     await runAllModules();
-    operationsAnalystView();
-    gerenteView();
-    vicePresidentView();
-    teamLeaderView();
+    operationsAnalystView("opAnalyst");
+    gerenteView("gerente");
+    vicePresidentView("vp");
+    teamLeaderView("tl");
 })

@@ -1,29 +1,60 @@
-export function operationsAnalystView() {
+export function operationsAnalystView(rol) {
+    let rolCheck = false;
+    if (rol == 'opAnalyst') {
+        rolCheck = true;
+    }
     const operationsAnalystView = document.getElementById("operations-analyst-view");
     operationsAnalystView.addEventListener("click", () => {
-        alert("Vista generada: Analista de operaciones");
+        if (rolCheck) {
+            alert("Vista generada: Analista de operaciones");
+        } else{
+            alert("ERROR: Perfil Incorrecto");
+        }
     });
-
-
 }
 
-export function gerenteView(){
+export function gerenteView(rol){
+     let rolCheck = false;
+    if (rol == 'gerente') {
+        rolCheck = true;
+    }
     const gerenteView = document.getElementById("gerente-view");
     gerenteView.addEventListener("click", () => {
-        alert("Vista generada: Gerente");
+         if (rolCheck) {
+            alert("Vista generada: Gerente");
+        } else{
+            alert("ERROR: Perfil Incorrecto");
+        }
     });
 }
 
-export function vicePresidentView(){
+export function vicePresidentView(rol){
+     let rolCheck = false;
+    if (rol == 'vp') {
+        rolCheck = true;
+    }
     const vicePresidentView = document.getElementById("vice-president-view");
     vicePresidentView.addEventListener("click", () => {
-        alert("Vista generada: Vicepresidente");
+         if (rolCheck) {
+            alert("Vista generada: VP");
+        } else{
+            alert("ERROR: Perfil Incorrecto");
+        }
     });
 }
 
-export function teamLeaderView(){
+export function teamLeaderView(rol){
+     let rolCheck = false;
+    if (rol == 'tl') {
+        rolCheck = true;
+    }
     const teamLeaderView = document.getElementById("team-leader-view");
     teamLeaderView.addEventListener("click", () => {
-        alert("Vista generada: Lider de equipo");
+         if (rolCheck) {
+            alert("Vista generada: TL");
+        } else{
+            alert("ERROR: Perfil Incorrecto");
+        }
     });
 }
+
