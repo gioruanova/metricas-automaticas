@@ -1,29 +1,67 @@
-export function operationsAnalystView() {
+function checkRol(rol, rolToValidate) {
+    let rolCheck = false;
+    if (rol == rolToValidate) {
+        rolCheck = true;
+    }
+    return rolCheck;
+}
+
+
+
+export function operationsAnalystView(rol) {
+    let rolCheck = checkRol(rol, "opAnalyst");
     const operationsAnalystView = document.getElementById("operations-analyst-view");
     operationsAnalystView.addEventListener("click", () => {
-        alert("Vista generada: Analista de operaciones");
+        if (rolCheck) {
+            alert("Vista generada: Analista de operaciones");
+        } else {
+            alert("ERROR: Perfil Incorrecto");
+        }
     });
-
-
 }
 
-export function gerenteView(){
+export function gerenteView(rol) {
+    let rolCheck = checkRol(rol, "gerente");
     const gerenteView = document.getElementById("gerente-view");
     gerenteView.addEventListener("click", () => {
-        alert("Vista generada: Gerente");
+        if (rolCheck) {
+            alert("Vista generada: Gerente");
+        } else {
+            alert("ERROR: Perfil Incorrecto");
+        }
     });
 }
 
-export function vicePresidentView(){
+export function vicePresidentView(rol) {
+    let rolCheck = checkRol(rol, "vp");
     const vicePresidentView = document.getElementById("vice-president-view");
     vicePresidentView.addEventListener("click", () => {
-        alert("Vista generada: Vicepresidente");
+        if (rolCheck) {
+            alert("Vista generada: VP");
+        } else {
+            alert("ERROR: Perfil Incorrecto");
+        }
     });
 }
 
-export function teamLeaderView(){
+export function teamLeaderView(rol) {
+    let rolCheck = checkRol(rol, "tl");
+
     const teamLeaderView = document.getElementById("team-leader-view");
     teamLeaderView.addEventListener("click", () => {
-        alert("Vista generada: Lider de equipo");
+        if (rolCheck) {
+            alert("Vista generada: TL");
+        } else {
+            alert("ERROR: Perfil Incorrecto");
+        }
     });
 }
+
+
+export function envioAutomatizado() {
+    const envioAutomatizado = document.getElementById("envio-automatizado");
+    envioAutomatizado.addEventListener("click", () => {
+        alert("Generando envio automatico y calendarizado de metricas segun valores en servidor");
+    });
+}
+
