@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <h1>Dashboard</h1>
+    <div class="main-container">
+        <div class="dashboard-container">
+            <h2>Dashboard</h2>
+        </div>
+        <div class="control-panel">
+            <h3>Panel de Control</h3>
+
+            <div class="form-section">
+                <h4>Configuración de Métricas</h4>
+
+                <div class="form-group">
+                    <label for="metric-interval">Intervalo de Actualización:</label>
+                    <select id="metric-interval">
+                        <option value="5">5 minutos</option>
+                        <option value="15" selected>15 minutos</option>
+                        <option value="30">30 minutos</option>
+                        <option value="60">1 hora</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="auto-refresh">Auto-refresh:</label>
+                    <input type="checkbox" id="auto-refresh" checked>
+                </div>
+
+                <div class="form-group">
+                    <label for="alert-threshold">Umbral de Alerta (%):</label>
+                    <input type="number" id="alert-threshold" value="80" min="0" max="100">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h4>Configuración de Notificaciones</h4>
+
+                <div class="form-group">
+                    <label for="email-notifications">Notificaciones por Email:</label>
+                    <input type="checkbox" id="email-notifications" checked>
+                </div>
+
+                <div class="form-group">
+                    <label for="notification-time">Hora de Notificación:</label>
+                    <input type="time" id="notification-time" value="09:00">
+                </div>
+
+                <div class="form-group">
+                    <label for="notification-recipients">Destinatarios:</label>
+                    <textarea id="notification-recipients"
+                        placeholder="email1@empresa.com, email2@empresa.com">gerente@empresa.com, vp@empresa.com</textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h4>Configuración de Reportes</h4>
+
+                <div class="form-group">
+                    <label for="report-frequency">Frecuencia de Reportes:</label>
+                    <select id="report-frequency">
+                        <option value="daily">Diario</option>
+                        <option value="weekly" selected>Semanal</option>
+                        <option value="monthly">Mensual</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="report-format">Formato de Reporte:</label>
+                    <select id="report-format">
+                        <option value="pdf">PDF</option>
+                        <option value="excel" selected>Excel</option>
+                        <option value="csv">CSV</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h4>Acciones</h4>
+
+                <div class="button-group">
+                    <button id="save-config" class="control-button save view-button">Guardar Configuración</button>
+                    <button id="reset-config" class="control-button reset view-button">Restablecer</button>
+                    <button id="test-connection" class="control-button test view-button">Probar Conexión</button>
+                    <button id="generate-report" class="control-button generate view-button">Generar Reporte</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html" class="view-button">Volver</a>
+</body>
+
+</html>
