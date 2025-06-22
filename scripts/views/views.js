@@ -64,3 +64,4 @@ export function envioAutomatizado() {
         alert("Generando envio automatico y calendarizado de metricas segun valores en servidor");
     });
 }
+
