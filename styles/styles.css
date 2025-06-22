@@ -124,9 +124,12 @@ body p {
     justify-content: center;
     margin-top: 20px;
     background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-button.view-button {
+button.view-button,
+a.view-button {
     all: unset;
     padding: 10px;
     border-radius: 5px;
@@ -135,7 +138,6 @@ button.view-button {
     color: white;
     font-size: 16px;
     font-weight: bold;
-    margin: 10px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -147,4 +149,11 @@ button.view-button {
         background-color: rgb(97, 135, 179);
         color: white;
     }
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    gap: 5px;
 }
